@@ -1,0 +1,38 @@
+{
+  "VIEW-NODE": {
+    "prompt": ">",
+    "exit-to-finish": true
+  },
+  "ENABLE-NODE": {
+    "prompt": "#",
+    "exit-to-finish": true,
+    "privileged-mode": true
+  },
+  "CONFIG-NODE": {
+    "prompt": "(config)#",
+    "exit-to-end": true,
+    "children": {
+      "INTERFACE-NODE": {
+        "prompt": "(config-if)#"
+      },
+      "OSPF-NODE": {
+        "prompt": "(config-router)#"
+      },
+      "BGP-NODE": {
+        "prompt": "(config-router)#"
+      },
+      "RIP-NODE": {
+        "prompt": "(config-router)#"
+      },
+      "OSPF6-NODE": {
+        "prompt": "(config-router)#"
+      },
+      "RIPNG-NODE": {
+        "prompt": "(config-router)#"
+      },
+      "RMAP-NODE": {
+        "prompt": "(config-route-map)#"
+      }
+    }
+  }
+}
